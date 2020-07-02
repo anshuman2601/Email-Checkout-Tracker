@@ -35,7 +35,7 @@ print ('Due Time: ' + hours)
 print('In how many days do you need a reminder?')
 local_time = float(input())
 #Converting Days to seconds for the sleep method to work.
-#local_time = local_time*60*60*24
+local_time = local_time*60*60*24
 
 time.sleep(local_time)
 print ('Book Due On: ' + date)
