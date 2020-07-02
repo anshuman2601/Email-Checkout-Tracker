@@ -53,3 +53,13 @@ This is not a test. This is meant to get to know each other a bit more. You can 
 Most importantly, this should be fun. If you enjoy working on this project, you will enjoy being a part of this team. 
 
 Levi
+
+# SETUP
+
+1. All files to remain consistent within the same folder as the python program is localized within the directory.
+
+2. In this case, run the tracker.py program, either from your terminal or double-click the file.
+
+3. In the next step, since this is pre-built, it is going to scan the email receipt automatically, and then ask for the reminder timeline(in Days only)
+
+4. Since it does not have a GUI, this task will be performed within the terminal and display the results there.
