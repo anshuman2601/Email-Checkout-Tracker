@@ -1,4 +1,5 @@
 import PyPDF2
+import time
 
 pdfObj = open('library checkout receipt.pdf', 'rb')
 
@@ -24,7 +25,18 @@ else:
     print (False)
 
 date = text[index+1:index+10]
-print (date)
+print ('Book Due On: ' + date)
 
-time = text[index+11:index+16]
-print (time)
+hours = text[index+11:index+16]
+print ('Due Time: ' + hours)
+
+
+
+print('In how many days do you need a reminder?')
+local_time = float(input())
+#Converting Days to seconds for the sleep method to work.
+#local_time = local_time*60*60*24
+
+time.sleep(local_time)
+print ('Book Due On: ' + date)
+print ('Due Time: ' + hours)
