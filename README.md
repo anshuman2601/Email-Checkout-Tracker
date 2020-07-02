@@ -1,6 +1,6 @@
 # Project: Remind me to take back my library items. 
 
-This file is a great reference for you to use. If you with to follow along with more detail, I [created a video](https://youtu.be/fpDR7yalB2c) walking you through this file with greater detail. 
+This file is a great reference for you to use. If you with to follow along with more detail, I created a video walking you through this file with greater detail. 
 
 # Problem: 
 I get emailed (example email attached), to my personal gmail, from my library when i check out books. it gives calendar date, if my account currently owes any fees, title of book, etc. i check out books and dvds. this email is not actionable. i need to remind myself to take back the book. I personally use my calendar on my phone for everything. 
