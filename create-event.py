@@ -15,8 +15,8 @@ def create():
        body={
            "summary": 'Book Reminder',
            "description": 'This is a reminder to return checkout material',
-           "start": {"dateTime": start, "timeZone": 'Asia/Kolkata'},
-           "end": {"dateTime": end, "timeZone": 'Asia/Kolkata'},
+           "start": {"dateTime": start, "timeZone": 'America/Chicago'},
+           "end": {"dateTime": end, "timeZone": 'America/Chicago'},
        }
    ).execute()
 
