@@ -30,6 +30,9 @@ print ('Book Due On: ' + dates)
 hours = text[index+11:index+16]
 print ('Due Time: ' + hours)
 
+dates1 = int(dates[5:9])
+dates2 = int(dates[0:1])
+dates3 = int(dates[2:4])
 
 
 #print('In how many days do you need a reminder?')
