@@ -3,13 +3,13 @@ from quickstart import main
 from tracker import dates1, dates2, dates3
 
 def create():
-   # creates one hour event tomorrow 10 
+   # creates event
    service = main()
 
    #d = datetime.now().date()
    tomorrow = datetime(dates1, dates2, dates3, 10)-timedelta(days=1)
    start = tomorrow.isoformat()
-   end = (tomorrow + timedelta(hours=1)).isoformat()
+   end = (tomorrow + timedelta(hours=6)).isoformat()
 
    event_result = service.events().insert(calendarId='primary',
        body={
