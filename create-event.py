@@ -1,20 +1,20 @@
 from datetime import datetime, timedelta
 from quickstart import main
-
+from tracker import dates
 
 def create():
    # creates one hour event tomorrow 10 
    service = main()
 
-   d = datetime.now().date()
-   tomorrow = datetime(d.year, d.month, d.day, 10)+timedelta(days=1)
+   #d = datetime.now().date()
+   tomorrow = datetime(dates[5:9], dates[0:2], dates[2:4], 10)-timedelta(days=1)
    start = tomorrow.isoformat()
    end = (tomorrow + timedelta(hours=1)).isoformat()
 
    event_result = service.events().insert(calendarId='primary',
        body={
-           "summary": 'Automating calendar',
-           "description": 'This is a tutorial example of automating google calendar with python',
+           "summary": 'Book Reminder',
+           "description": 'This is a reminder to return checkout material',
            "start": {"dateTime": start, "timeZone": 'Asia/Kolkata'},
            "end": {"dateTime": end, "timeZone": 'Asia/Kolkata'},
        }
